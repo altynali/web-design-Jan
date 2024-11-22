@@ -33,6 +33,19 @@ input {
   list-style-type: none;
 }
 
+a:visited {
+  color: var(--blue-color);
+}
+
+a:hover {
+  color: var(--blue-hover-color);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--dark-font-color); 
+}
+
 body {
   background: var(--primary-bg-color);
   color: var(--dark-font-color);
@@ -320,6 +333,10 @@ h1 {
   .navigation-links {
     display: flex;
   }
+
+   .navigation-links-bottom > li > a {
+     font-size: 1rem; 
+    }
 
   .searching-bar {
     width: 50%;
