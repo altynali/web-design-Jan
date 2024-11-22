@@ -28,7 +28,7 @@ body {
   font: 1rem / 1.5rem var(--font-family-main);
 }
 
-.root{
+.root {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -180,16 +180,37 @@ h1 {
   }
 }
 
+/* Grid Container for Large Screens */
 @media screen and (min-width: 900px) {
   .grid-container {
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 equal columns */
+    gap: 20px;
   }
 
-  .news-item.large {
-    grid-column: span 2;
+  /* First row layout */
+  .grid-container > .news-item:nth-child(1) {
+    grid-column: span 2; /* Spans 2 columns */
+    grid-row: span 2; /* Spans 2 rows */
   }
 
-  .news-item.medium {
-    grid-column: span 2;
+  .grid-container > .news-item:nth-child(2) {
+    grid-column: span 4; /* Spans 4 columns */
+    grid-row: span 2; /* Spans 2 rows */
+  }
+
+  .grid-container > .news-item:nth-child(3),
+  .grid-container > .news-item:nth-child(4) {
+    grid-column: span 1; /* Spans 2 columns */
+    grid-row: span 2; /* Spans 2 rows */
+  }
+
+  /* Second row layout */
+  .grid-container > .news-item:nth-child(5),
+  .grid-container > .news-item:nth-child(6),
+  .grid-container > .news-item:nth-child(7),
+  .grid-container > .news-item:nth-child(8) {
+    grid-column: span 2; /* Spans 2 columns each */
+    grid-row: span 1; /* Each occupies 1 row */
   }
 }
