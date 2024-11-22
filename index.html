@@ -8,10 +8,10 @@
   </head>
   <body>
     <div class="root">
-      <header>
+      <header aria-label="Hlavicka">
         <nav class="header-navigation-bar-small" aria-label="Main Navigation">
           <div class="header-nav">
-            <h1>KEKLOL ZPRAVODAJ</h1>
+            <a href="#" tabindex=0><h1>KEKLOL ZPRAVODAJ</h1></a>
             <ul class="navigation-links">
               <li><a href="#">Autoři</a></li>
               <li><a href="#">O nás</a></li>
@@ -28,11 +28,11 @@
           </div>
           <div class="navigation-links-bottom-wrapper-small">
             <ul class="navigation-links-bottom">
-              <li><a href="#">Svet</a></li>
-              <li><a href="#">Sport</a></li>
-              <li><a href="#">Trending</a></li>
-              <li><a href="#">Premium</a></li>
-              <li><a href="#">O nás</a></li>
+              <li><a href="#" tabindex=1>Svet</a></li>
+              <li><a href="#" tabindex=2>Sport</a></li>
+              <li><a href="#" tabindex=3>Trending</a></li>
+              <li><a href="#" tabindex=4></a>Premium</a></li>
+              <li><a href="#" tabindex=5>O nás</a></li>
             </ul>
           </div>
         </nav>
@@ -68,7 +68,7 @@
       </header>
       <aside class="info-aside" aria-labelledby="premiove-sluzby">
         <h1 id="premiove-sluzby">Vítejte!</h1>
-        <p>
+        <p aria-label="Reklamní prohlášení">
           Naše zpravodajství se snaží předkládat faktickou žurnalistiku... aspoň
           většinou. Ale přiznejme si, nejsme superhrdinové, i když bychom
           chtěli. Nepotřebujeme, ale preferujeme vaši pomoc! Přidejte se k nám a
@@ -77,7 +77,7 @@
         <button class="premium-button">Premium</button>
       </aside>
 
-      <main class="content">
+      <main class="content" aria-label="Hlavni obsah">
         <section class="grid-container" aria-label="Seznam článků">
           <article class="news-item large" aria-labelledby="článek-1">
             <figure>

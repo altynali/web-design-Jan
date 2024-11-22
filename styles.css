@@ -1,4 +1,6 @@
 :root {
+  --black-color: #000000;
+  --black-hover-color: #1a1818;
   --blue-color: #0a4ea1;
   --blue-hover-color: #207cee;
   --dark-font-color: #333333;
@@ -28,22 +30,21 @@ button,
 input {
   margin: 0;
   padding: 0;
-  outline: none;
   text-decoration: none;
   list-style-type: none;
 }
 
 a:visited {
-  color: var(--blue-color);
+  color: var(--black-color);
 }
 
 a:hover {
-  color: var(--blue-hover-color);
+  color: var(--black-hover-color);
   text-decoration: underline;
 }
 
 a:active {
-  color: var(--dark-font-color); 
+  color: var(--black-font-color); 
 }
 
 body {
