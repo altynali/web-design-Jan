@@ -50,8 +50,11 @@
               type="text"
               placeholder="Hledat..."
               class="navigation-input"
+              aria-label="Vyhledávací pole"
             />
-            <button class="search-button">Search</button>
+            <button class="search-button" aria-label="Spustit vyhledávání">
+              Search
+            </button>
           </div>
           <div class="navigation-links-bottom-wrapper">
             <ul class="navigation-links-bottom">
@@ -63,8 +66,8 @@
           </div>
         </nav>
       </header>
-      <aside class="info-aside">
-        <h1>Vítejte!</h1>
+      <aside class="info-aside" aria-labelledby="premiove-sluzby">
+        <h1 id="premiove-sluzby">Vítejte!</h1>
         <p>
           Naše zpravodajství se snaží předkládat faktickou žurnalistiku... aspoň
           většinou. Ale přiznejme si, nejsme superhrdinové, i když bychom
@@ -75,85 +78,93 @@
       </aside>
 
       <main class="content">
-        <section class="grid-container">
-          <article class="news-item large">
+        <section class="grid-container" aria-label="Seznam článků">
+          <article class="news-item large" aria-labelledby="článek-1">
             <figure>
-              <img src="https://picsum.photos/600/400" alt="News image" />
+              <img src="https://picsum.photos/600/400" alt="Zápas Sparta vs. Slavia, výsledek 1:0" />
+              <figcaption class="news-content">
+                <h2 id="článek-1">Sport: Sparta - Slavia 1:0</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="news-item medium" aria-labelledby="článek-2">
+            <figure>
+              <img src="https://picsum.photos/600/400" alt="Máslo" />
+              <figcaption class="news-content">
+                <h2 id="článek-2">Domácí: Zdražení másla</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article
+            class="news-item small"
+            id="first_small_article"
+            aria-labelledby="článek-3"
+          >
+            <figure>
+              <img src="https://picsum.photos/600/400" alt="Hudební nástroj" />
+              <figcaption class="news-content">
+                <h2 id="článek-3">Umění: Svět hudby</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article
+            class="news-item small"
+            id="second_small_article"
+            aria-labelledby="článek-4"
+          >
+            <img src="https://picsum.photos/600/400" alt="Iran" />
             <figcaption class="news-content">
-              <h2>Sport: Sparta - Slavia 1:0</h2>
+              <h2 id="článek-4">Svět: Irán</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </figcaption>
-            </figure>
           </article>
-          <article class="news-item medium">
+          <article class="news-item small" aria-labelledby="článek-5">
             <figure>
-              <img src="https://picsum.photos/600/400" alt="News image" />
+              <img src="https://picsum.photos/600/400" alt="Umelecka vystava" />
               <figcaption class="news-content">
-                <h2>Domácí: Zdražení másla</h2>
+                <h2 id="článek-5">Umění: Svět umění</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </figcaption>
             </figure>
           </article>
-          <article class="news-item small" id="first_small_article">
+          <article class="news-item small" aria-labelledby="článek-6">
             <figure>
-              <img src="https://picsum.photos/600/400" alt="News image" />
+              <img src="https://picsum.photos/600/400" alt="Ukrajina" />
               <figcaption class="news-content">
-                <h2>Umění: Svět hudby</h2>
+                <h2 id="článek-6">Politika: Ukrajinský rozkvět</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </figcaption>
             </figure>
           </article>
-          <article class="news-item small" id="second_small_article">
-            <img src="https://picsum.photos/600/400" alt="News image" />
-            <figcaption class="news-content">
-              <h2>Svět: Irán</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </figcaption>
-          </article>
-          <article class="news-item small">
+          <article class="news-item small" aria-labelledby="článek-7">
             <figure>
-              <img src="https://picsum.photos/600/400" alt="News image" />
+              <img src="https://picsum.photos/600/400" alt="Návrhovaná úprava stanice metra v Bratislavě" />
               <figcaption class="news-content">
-                <h2>Umění: Svět umění</h2>
+                <h2 id="článek-7">Fikce: Metro v Bratislavě</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </figcaption>
             </figure>
           </article>
-          <article class="news-item small">
+          <article class="news-item small" aria-labelledby="článek-8">
             <figure>
-              <img src="https://picsum.photos/600/400" alt="News image" />
+              <img src="https://picsum.photos/600/400" alt="Muž přednáší proslov před lidmi" />
               <figcaption class="news-content">
-                <h2>Politika: Ukrajinský rozkvět</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </figcaption>
-            </figure>
-          </article>
-          <article class="news-item small">
-            <figure>
-              <img src="https://picsum.photos/600/400" alt="News image" />
-              <figcaption class="news-content">
-                <h2>Film: Metro v Bratislavě</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </figcaption>
-            </figure>
-          </article>
-          <article class="news-item small">
-            <figure>
-              <img src="https://picsum.photos/600/400" alt="News image" />
-              <figcaption class="news-content">
-                <h2>Politika: Opozice ve strehu</h2>
+                <h2 id="článek-8">Politika: Opozice ve strehu</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </figcaption>
             </figure>
           </article>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" role="contentinfo">
         <p>© ETE88E Web design - Bechný, Hasanov, Hasanov</p>
         <div>
-          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.instagram.com/" aria-label="Otevřít Instagram stránky">Instagram</a>
           <span>|</span>
-          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://www.facebook.com/" aria-label="Otevřít Facebook stránky">Facebook</a>
         </div>
       </footer>
     </div>
