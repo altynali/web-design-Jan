@@ -170,6 +170,16 @@ body {
   z-index: 100;
 }
 
+.header-logo {
+  color: var(--black-color);
+  cursor: var(--point);
+}
+
+.header-logo:hover {
+  color: var(--black-hover-color);
+  text-decoration: none;
+}
+
 h1 {
   margin: 0;
   font-size: 1.5rem;
@@ -293,12 +303,7 @@ h1 {
     box-shadow: 2px 2px 2px 1px var(--shadow-color);
   }
 
-  .header-nav > a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .header-nav > a > h1 {
+  .header-logo > h1 {
     color: var(--blue-color);
   }
 
@@ -328,6 +333,10 @@ h1 {
 @media screen and (min-width: 400px) {
   .header-nav {
     box-shadow: 2px 2px 2px 1px var(--shadow-color);
+  }
+
+  .header-logo > h1 {
+    color: var(--blue-color);
   }
 
   .navigation-links-bottom-wrapper-small {
@@ -366,6 +375,14 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     box-shadow: none;
+  }
+
+  .header-logo > h1 {
+    color: var(--black-color);
+  }
+
+  .header-logo > h1:hover {
+    color: var(--dark-font-color);
   }
 
   .navigation-links {
