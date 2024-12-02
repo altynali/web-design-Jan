@@ -18,8 +18,10 @@
               <li><a href="#">PremiumSSSSSS</a></li>
             </ul>
           </div>
-          <div class="searching-bar" role='Vyhledávání'>
-             <label for="search-input" class="visually-hidden-label">Vyhledávací pole</label>
+          <div class="searching-bar" role="Vyhledávání">
+            <label for="search-input" class="visually-hidden-label">
+              Vyhledávací pole
+            </label>
             <input
               id="search-input"
               type="text"
@@ -47,8 +49,10 @@
               <li><a href="#">Premium</a></li>
             </ul>
           </div>
-          <div class="searching-bar" role='Vyhledávání'>
-            <label for="search-input2" class="visually-hidden-label">Vyhledávací pole</label>
+          <div class="searching-bar" role="Vyhledávání">
+            <label for="search-input2" class="visually-hidden-label">
+              Vyhledávací pole
+            </label>
             <input
               id="search-input2"
               type="text"
@@ -70,25 +74,22 @@
           </div>
         </nav>
       </header>
-      <aside class="info-aside" aria-labelledby="premiove-sluzby">
-        <h1 id="premiove-sluzby">Vítejte!</h1>
-        <p aria-label="Reklamní prohlášení">
-          Naše zpravodajství se snaží předkládat faktickou žurnalistiku... aspoň
-          většinou. Ale přiznejme si, nejsme superhrdinové, i když bychom
-          chtěli. Nepotřebujeme, ale preferujeme vaši pomoc! Přidejte se k nám a
-          společně vytvořme svět, kde je fikce faktická, a faktická zábavná!
-        </p>
-        <button class="premium-button">Premium</button>
-      </aside>
-
       <main class="content" aria-label="Hlavni obsah">
         <section class="grid-container" aria-label="Seznam článků">
+          <h2 class="news-popular" id="trending">Populární</h2>
           <article class="news-item large" aria-labelledby="článek-1">
             <figure>
-              <img src="https://picsum.photos/600/400" alt="Zápas Sparta vs. Slavia, výsledek 1:0" />
+              <img
+                src="https://picsum.photos/600/400"
+                alt="Zápas Sparta vs. Slavia, výsledek 1:0"
+              />
               <figcaption class="news-content">
-                <h2 id="článek-1">Sport: Sparta - Slavia 1:0</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3 id="článek-1">Sport</h3>
+                <h4>Sparta - Slavia 1:0</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
               </figcaption>
             </figure>
           </article>
@@ -96,10 +97,21 @@
             <figure>
               <img src="https://picsum.photos/600/400" alt="Máslo" />
               <figcaption class="news-content">
-                <h2 id="článek-2">Domácí: Zdražení másla</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3 id="článek-2">Domácí</h3>
+                <h4>Zdražení másla</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elitorem ipsum
+                  dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit..
+                </p>
               </figcaption>
             </figure>
+            <p>
+              Tento článek je dostupný pouze pro předplatitele. Získejte přístup kliknutím na tlačítko níže a připojte se k našemu
+              <span><a>Premium programu.</a></span>
+            </p>
+            <!-- Rozepsat rozdil mobil a  desktop udelat classu, ktera vymeni poradi u mensich rozliseni-->
           </article>
           <article
             class="news-item small"
@@ -109,8 +121,12 @@
             <figure>
               <img src="https://picsum.photos/600/400" alt="Hudební nástroj" />
               <figcaption class="news-content">
-                <h2 id="článek-3">Umění: Svět hudby</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3 id="článek-3">Umění</h3>
+                <h4>Svět hudby</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
               </figcaption>
             </figure>
           </article>
@@ -121,16 +137,24 @@
           >
             <img src="https://picsum.photos/600/400" alt="Iran" />
             <figcaption class="news-content">
-              <h2 id="článek-4">Svět: Irán</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3 id="článek-4">Svět</h3>
+              <h4>Irán</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
             </figcaption>
           </article>
           <article class="news-item small" aria-labelledby="článek-5">
             <figure>
               <img src="https://picsum.photos/600/400" alt="Umelecka vystava" />
               <figcaption class="news-content">
-                <h2 id="článek-5">Umění: Svět umění</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3 id="článek-5">Umění</h3>
+                <h4>Svět umění</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
               </figcaption>
             </figure>
           </article>
@@ -138,37 +162,91 @@
             <figure>
               <img src="https://picsum.photos/600/400" alt="Ukrajina" />
               <figcaption class="news-content">
-                <h2 id="článek-6">Politika: Ukrajinský rozkvět</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3 id="článek-6">Politika</h3>
+                <h4>Ukrajinský rozkvět</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
               </figcaption>
             </figure>
           </article>
           <article class="news-item small" aria-labelledby="článek-7">
             <figure>
-              <img src="https://picsum.photos/600/400" alt="Návrhovaná úprava stanice metra v Bratislavě" />
+              <img
+                src="https://picsum.photos/600/400"
+                alt="Návrhovaná úprava stanice metra v Bratislavě"
+              />
               <figcaption class="news-content">
-                <h2 id="článek-7">Fikce: Metro v Bratislavě</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3 id="článek-7">Fikce</h3>
+                <h4>Metro v Bratislavě</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
               </figcaption>
             </figure>
           </article>
           <article class="news-item small" aria-labelledby="článek-8">
             <figure>
-              <img src="https://picsum.photos/600/400" alt="Muž přednáší proslov před lidmi" />
+              <img
+                src="https://picsum.photos/600/400"
+                alt="Muž přednáší proslov před lidmi"
+              />
               <figcaption class="news-content">
-                <h2 id="článek-8">Politika: Opozice ve strehu</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3 id="článek-8">Politika</h3>
+                <h4>Opozice ve strehu</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="news-item small" aria-labelledby="článek-9">
+            <figure>
+              <img
+                src="https://picsum.photos/600/400"
+                alt="Muž přednáší proslov před lidmi"
+              />
+              <figcaption class="news-content">
+                <h3 id="článek-9">Svet</h3>
+                <h4>Sudan masakr</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
               </figcaption>
             </figure>
           </article>
         </section>
       </main>
+       <aside class="info-aside" aria-labelledby="premiove-sluzby">
+        <h1 id="premiove-sluzby">Subscribe!</h1>
+        <p aria-label="Reklamní prohlášení">
+          Naše zpravodajství se snaží předkládat faktickou žurnalistiku... aspoň
+          většinou. Ale přiznejme si, nejsme superhrdinové, i když bychom
+          chtěli. Nepotřebujeme, ale preferujeme vaši pomoc! Přidejte se k nám a
+          společně vytvořme svět, kde je fikce faktická, a faktická zábavná!
+        </p>
+        <button class="premium-button">Premium</button>
+      </aside>
       <footer class="footer" role="contentinfo">
         <p>© ETE88E Web design - Bechný, Hasanov, Hasanov</p>
         <div>
-          <a href="https://www.instagram.com/" aria-label="Otevřít Instagram stránky">Instagram</a>
+          <a
+            href="https://www.instagram.com/"
+            aria-label="Otevřít Instagram stránky"
+          >
+            Instagram
+          </a>
           <span>|</span>
-          <a href="https://www.facebook.com/" aria-label="Otevřít Facebook stránky">Facebook</a>
+          <a
+            href="https://www.facebook.com/"
+            aria-label="Otevřít Facebook stránky"
+          >
+            Facebook
+          </a>
         </div>
       </footer>
     </div>
