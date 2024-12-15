@@ -1,7 +1,15 @@
 document.getElementById("mobile-menu").addEventListener("click", function () {
-  const navListContainer = document.querySelector(".nav-list-container");
+  const body = document.querySelector("body");
   const menuToggle = document.querySelector(".menu-toggle");
-  console.log("Ahoj");
+  const navListContainer = document.querySelector(".nav-list-container");
+
   navListContainer.classList.toggle("active");
+
+  navListContainer.classList.contains("active")
+    ? body.classList.add("hidden")
+    : body.classList.remove("hidden");
+
   menuToggle.classList.toggle("active");
+  const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+  menuToggle.setAttribute("aria-expanded", !expanded);
 });
