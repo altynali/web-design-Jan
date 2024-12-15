@@ -248,7 +248,7 @@ section {
   position: fixed;
   top: 3.25rem;
   right: 0;
-  height: 53%;
+  height: 45%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -596,6 +596,7 @@ section {
 .advertise-header {
   display: flex;
   align-items: start;
+  flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 1rem;
 }
@@ -683,6 +684,12 @@ section {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 500px) {
+  .advertise-header {
+    flex-wrap: nowrap;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .dektop-nav-form {
     border: none;
@@ -730,7 +737,7 @@ section {
   }
 
   .advertise-image {
-    max-width: 300px;
+    width: 100%;
     height: 250px;
   }
 
