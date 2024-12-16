@@ -20,8 +20,13 @@
       <nav aria-label="Secondary Menu" class="navbar">
         <div class="nav-form dektop-nav-form">
           <label for="nav-input-desktop" class="nav-label-hidden">Search</label>
-          <input type="text" class="nav-input" id="nav-input-desktop" />
-          <button class="search"></button>
+          <input
+            type="text"
+            class="nav-input"
+            id="nav-input-desktop"
+            aria-label="Search"
+          />
+          <button class="search" aria-label="Search"></button>
         </div>
         <button aria-label="View Cart" class="icon-cart"></button>
         <button aria-label="User Account" class="icon-user"></button>
@@ -37,11 +42,16 @@
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
-        <div class="nav-list-container">
+        <div class="nav-list-container" id="nav-list-container">
           <div class="nav-form">
             <label for="nav-input" class="nav-label-hidden">Search</label
-            ><input type="text" class="nav-input" id="nav-input" />
-            <button class="search"></button>
+            ><input
+              type="text"
+              class="nav-input"
+              id="nav-input"
+              aria-label="Search"
+            />
+            <button class="search" aria-label="Search"></button>
           </div>
           <ul class="nav-list">
             <li><a href="#">Home</a></li>
@@ -356,125 +366,6 @@
           </article>
         </div>
       </section>
-      <section aria-labelledby="comments-section" class="comments-section">
-        <h2 id="comments-section" class="comments-section-heading">
-          Comments & Analysis
-        </h2>
-        <!-- Formulář pro přidání komentáře -->
-        <form action="#" method="POST" class="comments-section-form">
-          <div class="comments-section-form-wrapper">
-            <label for="first-name" class="comments-section-label">
-              <span>First name*</span>
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                required
-                class="comments-section-input"
-              />
-            </label>
-            <label for="last-name" comments-section-label>
-              <span>Last name*</span>
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                required
-                class="comments-section-input"
-              />
-            </label>
-          </div>
-          <label for="email" class="comments-section-label">
-            <span>Email address*</span>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              class="comments-section-input"
-            />
-          </label>
-          <label for="comment" class="comments-section-label">
-            <span>Comment*</span>
-            <textarea
-              id="comment"
-              name="comment"
-              required
-              rows="4"
-              class="comments-section-input"
-            ></textarea>
-          </label>
-          <button type="submit" class="comments-section-button">POST</button>
-        </form>
-
-        <!-- Seznam komentářů -->
-        <div class="comments-section-wrapper">
-          <article class="comments-section-article">
-            <img
-              src="./assets/account-circle-svgrepo-com.svg"
-              alt="Profilová fotka Morty Kim"
-              class="comments-section-article-img"
-            />
-            <div>
-              <h3 class="comments-section-article-heading">Morty Kim</h3>
-              <p class="comments-section-article-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-              </p>
-              <time datetime="2024-12-18" class="comments-section-article-time"
-                >18.12.24</time
-              >
-            </div>
-          </article>
-          <article class="comments-section-article">
-            <img
-              src="./assets/account-circle-svgrepo-com.svg"
-              alt="Profilová fotka Jake Cool"
-              class="comments-section-article-img"
-            />
-            <div>
-              <h3 class="comments-section-article-heading">Jake Cool</h3>
-              <p class="comments-section-article-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-              </p>
-              <time datetime="2024-12-18" class="comments-section-article-time"
-                >18.12.24</time
-              >
-            </div>
-          </article>
-          <article class="comments-section-article">
-            <img
-              src="./assets/account-circle-svgrepo-com.svg"
-              alt="Profilová fotka Rick Seed"
-              class="comments-section-article-img"
-            />
-            <div>
-              <h3 class="comments-section-article-heading">Rick Seed</h3>
-              <p class="comments-section-article-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-              </p>
-              <time datetime="2024-12-18" class="comments-section-article-time"
-                >18.12.24</time
-              >
-            </div>
-          </article>
-          <article class="comments-section-article">
-            <img
-              src="./assets/account-circle-svgrepo-com.svg"
-              alt="Profilová fotka Rick Morty"
-              class="comments-section-article-img"
-            />
-            <div>
-              <h3 class="comments-section-article-heading">Rick Morty</h3>
-              <p class="comments-section-article-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-              </p>
-              <time datetime="2024-12-18" class="comments-section-article-time"
-                >18.12.24</time
-              >
-            </div>
-          </article>
-        </div>
-      </section>
     </main>
     <aside>
       <section aria-labelledby="advertise" class="advertise">
@@ -493,11 +384,11 @@
                 consectetur adipiscingorem ipsum dolor sit amet
               </p>
               <p class="advertise-text-md">
-                Amet consectetur adipiscingorem ipsum dolor sit amet. Amet
-                consectetur adipiscingorem ipsum dolor sit amet. Amet
-                consectetur adipiscingorem ipsum dolor sit amet
+                Consecteturmet consectetur adipiscingorem ipsum dolor sit amet.
+                Amet conr adipiscingorem ipsum dolor sit amet. Amet consectetur
+                adipiscingorem ipsum dolor sit amet
               </p>
-              <p class="advertise-text-md">
+              <p class="advertise-text-desktop">
                 Amet consectetur adipiscingorem ipsum dolor sit amet. Amet
                 consectetur adipiscingorem ipsum dolor sit amet.
               </p>
@@ -531,9 +422,26 @@
           </ul>
         </nav>
       </div>
-
+      <div class="footer-container-social">
+        <a
+          href="https://instagram.com"
+          class="footer-icon-instagram"
+          aria-label="Instagram"
+        ></a>
+        <a
+          href="https://facebook.com"
+          class="footer-icon-facebook"
+          aria-label="Facebook"
+        ></a>
+        <a
+          href="https://twitter.com"
+          class="footer-icon-twitter"
+          aria-label="Twitter"
+        ></a>
+      </div>
       <!-- Spodní část -->
       <div class="footer-bottom-wrapper">
+        <p class="footer-bottom-student">Studentský Projekt INFO - ETE30E - ZS 2024/2025</p>
         <p class="footer-bottom-copyright">
           Copyright 2024 JRM. All rights reserved.
           <!-- The JRM is not responsible for the content of external sites. -->
