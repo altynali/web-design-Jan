@@ -9,30 +9,34 @@
   <body>
     <header class="header">
       <h1 class="header-logo">JRM NEWS</h1>
-      <nav aria-label="Hlavní menu" class="navbar">
-        <!-- <a href="#" aria-label="Košík"><img src="cart-icon.png" alt="Košík"></a>
-      <a href="#" aria-label="Profil"><img src="profile-icon.png" alt="Profil"></a> -->
-        <!-- MAIN NAVIGACE UL LI A !!! FUCK IT -->
+      <nav class="header-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="#">Category</a></li>
+          <li class="nav-list-item"><a href="#">About</a></li>
+          <li class="nav-list-item"><a href="#">Contacts</a></li>
+          <li class="nav-list-item"><a href="#">Subscription</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Secondary Menu" class="navbar">
         <div class="nav-form dektop-nav-form">
           <label for="nav-input-desktop" class="nav-label-hidden">Search</label>
           <input type="text" class="nav-input" id="nav-input-desktop" />
           <button class="search"></button>
         </div>
-        <span class="icon-cart"></span>
-        <span class="icon-user"></span>
-        <div
+        <button aria-label="View Cart" class="icon-cart"></button>
+        <button aria-label="User Account" class="icon-user"></button>
+        <button
           class="menu-toggle"
           id="mobile-menu"
           aria-label="Toggle navigation menu"
           aria-expanded="false"
           aria-controls="nav-list-container"
-          role="button"
           tabindex="0"
         >
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        </div>
+        </button>
         <div class="nav-list-container">
           <div class="nav-form">
             <label for="nav-input" class="nav-label-hidden">Search</label
@@ -65,10 +69,29 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing
                 </p>
               </div>
-              <p class="main-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum
-                dolor sit amet, consectetur adipiscing
-              </p>
+              <div class="main-container">
+                <p class="main-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum
+                  dolor sit amet, consectetur adipiscing
+                </p>
+                <div class="social-container">
+                  <a
+                    href="https://instagram.com"
+                    class="icon-instagram"
+                    aria-label="Instagram"
+                  ></a>
+                  <a
+                    href="https://facebook.com"
+                    class="icon-facebook"
+                    aria-label="Facebook"
+                  ></a>
+                  <a
+                    href="https://twitter.com"
+                    class="icon-twitter"
+                    aria-label="Twitter"
+                  ></a>
+                </div>
+              </div>
             </article>
           </section>
 
@@ -300,7 +323,8 @@
               <p class="more-news-text-secondary">
                 Amet, consectetur adipiscing. Amet consectetur adipiscing orem
                 sit amet dolor sit amet amet consectetur adipiscing.
-              </p><p class="more-news-text-tercial">
+              </p>
+              <p class="more-news-text-tercial">
                 Amet, consectetur adipiscing. Amet consectetur adipiscing orem
                 sit amet dolor sit amet amet consectetur adipiscing.
               </p>
@@ -323,7 +347,8 @@
               <p class="more-news-text-secondary">
                 Amet, consectetur adipiscing. Amet consectetur adipiscing orem
                 sit amet dolor sit amet amet consectetur adipiscing.
-              </p><p class="more-news-text-tercial">
+              </p>
+              <p class="more-news-text-tercial">
                 Amet, consectetur adipiscing. Amet consectetur adipiscing orem
                 sit amet dolor sit amet amet consectetur adipiscing.
               </p>
