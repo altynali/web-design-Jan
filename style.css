@@ -13,11 +13,11 @@
   --icon-size-mobile: 24px;
   --icon-size-medium: 28px;
   --icon-size-desktop: 32px;
+  --icon-size-desktop-x: 36px;
 
   /* Odsazení */
   --rem-xs: 1rem;
   --rem-s: 1.5rem;
-  
 
   /* Font Size Variables */
   --font-size-xs: 0.75rem; /* 12px */
@@ -552,7 +552,6 @@ section {
   gap: 10px;
 }
 
-/* Jednotlivé články */
 .news-card {
   border: 1px solid var(--secondary-background-color);
   border-radius: 8px;
@@ -1055,4 +1054,3 @@ section {
     margin-bottom: 0.375rem;
   }
 }
-
